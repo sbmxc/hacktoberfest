@@ -1,2 +1,3 @@
 # hacktoberfest
-ADD YOUR NAME IN THE README FILE.
+Add your name below.
+1. Shubham Chauhan
