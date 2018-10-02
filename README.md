@@ -1,5 +1,10 @@
 # hacktoberfest
-Star and fork this repo.
-Add your name below.
-1. Shubham Chauhan
-2. Peter Haddad
+
+##Upload a hello world program in any language.
+##File name should be your username.
+
+###For example
+sbmsc.py
+```
+print "hello world!"
+```
