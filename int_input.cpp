@@ -1,11 +1,16 @@
 #include<bits/stdc++.h>
+#include<iostream>
 using namespace std;
 
 int main()
 {
-  int a,b;
-  cin>>a>>b;
+  int xd,jd;
+  cin>>xd;
+  cin>>jd;
   
-  cout<<"a = "<<a<<" and b = "<<b;
-
+  xd = xd - 1;
+  jd = jd - 1;
+  
+  cout<<"xd = "<<xd<<" oraz jd = "<<jd;
+  // Proste ze tak BloodTrail
 }
