@@ -1,0 +1,161 @@
+.head
+{
+margin-top: 80px;
+top: 238px;
+left: 100px;
+width: 617px;
+height: 172px;
+text-align: left;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+font-weight: 900;
+font-size: 4rem;
+}
+.para
+{
+top: 455px;
+left: 100px;
+width: 649px;
+height: 74px;
+text-align: left;
+letter-spacing: 0px;
+color: #333A4D;
+opacity: 1;
+font-size: 1.5rem;
+}
+.body
+{
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.start
+{
+ top: 596px;
+left: 100px;
+width: 243px;
+height: 84px;
+background: #FF7F66 0% 0% no-repeat padding-box;
+border-radius: 42px;
+opacity: 1;
+font-weight: 700;
+}
+.cover
+{
+    top: 157px;
+left: 772px;
+width: 45%;
+height: 20%;
+float: right;
+opacity: 1;
+
+}
+ .nav-item
+ {
+     margin: 20px;
+     
+     font-weight: 400;
+ }
+ .nav-link
+ {
+    font-size: 1.2rem;
+    color: #000000 !important;
+ }
+ .navbar-brand
+ {
+     font-weight: 600;
+    font-size: 1.4rem !important;
+    color: #000000 !important;
+ }
+ .container
+ {
+     padding:0!important;
+ }
+
+ @media(max-width:992px)
+ {
+     .head
+     {
+         font-size:2.8rem;
+     }
+     .para
+     {
+         font-size:1.2rem;
+     }
+     .start
+     {
+         width: 200px;
+         height: 60px;
+     }
+ }
+ @media(max-width:580px)
+ {
+     .container
+     {
+         padding: 0 15px !important;
+     }
+ }
+ @media(max-width:768px)
+ {
+    .head
+    {
+        font-size:2.3rem;
+        width:auto;
+         height: auto;
+    }
+    .para
+    {width:auto;
+        height: auto;
+        
+    }
+ }
+ @media(max-width:530px)
+ {
+    .head
+    {
+        font-size:2rem;
+        width:auto;
+         height: auto;
+    }
+    .para
+    {width:auto;
+        height: auto;
+        font-size: 1rem;
+    }
+ }
+ @media(max-width:480px)
+ {
+     .container
+     {
+         padding: 0 15px !important;
+     }
+     .cover
+     {
+         float: none;
+         display: block;
+         margin: 0 auto;
+         width:65%
+     }
+     .head
+     {
+         font-size:1.8rem;
+         width:auto;
+         height: auto;
+         text-align: center;
+         font-weight: 400;
+         margin-bottom: 20px;
+     }
+     .para
+     {
+         font-size:1rem;
+         width:auto;
+         height: auto;
+         text-align: center;
+         
+     }
+     .start
+     {  display: block;
+         margin: 20px auto;
+         width: 175px;
+         height: 45px;
+     }
+ }
