@@ -38,7 +38,7 @@ git push origin branch-name
 ```
 * Create a New Pull Request from your forked repository (Click the New Pull Request button located at the top of your repo)
 * Wait for your PR review and merge approval!
-* __Star this repository__ if you had fun!
+* __Star this repository__ for higher chance of merge approval!
 
 ### Create a `Hello, World!` Script
 Add a `hello_world_yourusername.xx` script to the `scripts` directory in any language of your choice! Here is an example:
