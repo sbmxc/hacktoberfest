@@ -4,5 +4,5 @@
       @autoreleasepool {
           NSLog(@"Hello World!");
       }
-      return 0;
+      return 0; // return 0, is necessary if you use int main()
   }
