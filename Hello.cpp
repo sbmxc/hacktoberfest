@@ -12,7 +12,7 @@ using namespace std;
 #define endl "\n"
 #define bits(n) __builtin_popcount(n)
 #define ini(a, i) memset(a, i, sizeof(a))
-
+// this is hello program 
 int main()
 {
 	ios_base::sync_with_stdio(false);
