@@ -1,4 +1,2 @@
 print('Hello')
-Print(;He)
-asdas
-dasd
+print('He')
