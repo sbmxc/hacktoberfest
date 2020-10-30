@@ -1,4 +1,4 @@
-# Name: Jean Hello World
+# Name: Jean-mrs - Hello World
 # Date: 29/10/20
 # Description: printing a "Hello World!" script.
 
