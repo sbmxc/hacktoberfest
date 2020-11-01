@@ -1,0 +1,50 @@
+package stackQueue;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+
+//enqueue is costlier
+public class StackFromQueue {
+
+	static Queue<Integer> q1 = new LinkedList<>();
+	static Queue<Integer> q2 = new LinkedList<>();
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number or records to push to stack");
+		int n = sc.nextInt();
+		for (int j = 0; j < n; j++) {
+			int i = sc.nextInt();
+			push(i);
+
+		}
+		pop();
+	}
+
+	private static void pop() {
+		if (!q1.isEmpty()) {
+			while (!q1.isEmpty()) {
+				System.out.print(q1.remove()+"-->");
+			}
+		}
+			System.out.print("Empty Stack");
+		
+	}
+
+	private static void push(int i) {
+
+		q2.add(i);
+		if (!q1.isEmpty()) {
+			while (!q1.isEmpty()) {
+				q2.add(q1.remove());
+			}
+		}
+
+		Queue<Integer> t = q1;
+		q1 = q2;
+		q2 = t;
+	}
+
+}
