@@ -20,8 +20,8 @@ width: 649px;
 height: 74px;
 text-align: left;
 letter-spacing: 0px;
-color: #333A4D;
-opacity: 1;
+color: 	#00ffff;
+backdrop-filter: grayscale(0.5) opacity(0.8);
 font-size: 1.5rem;
 }
 .body
