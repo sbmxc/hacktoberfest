@@ -4,5 +4,5 @@
 #include<cono.h>
 
 int main(){
-printf("Hello Deep");
+  printf("Hello Deep");
 }
