@@ -13,5 +13,5 @@ def main():
     print("Hello, World!")
     input("Press enter key to exit.")
 
-# main() called here
+# main() is called here
 main()

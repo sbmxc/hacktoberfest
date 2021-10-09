@@ -9,7 +9,7 @@ This repository is open to all members of the GitHub Community. Any member may c
 [https://github.com/sbmsc/hacktoberfest](https://github.com/sbmsc/hacktoberfest)
 
 
-## What is Hacktoberfest?
+## What is Hacktoberfest and how many times it is organised in a year?
 A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first Pull Request to any Public Repository on GitHub and contribute to the Open Source Developer Community.
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
@@ -38,7 +38,7 @@ git push origin branch-name
 ```
 * Create a New Pull Request from your forked repository (Click the New Pull Request button located at the top of your repo)
 * Wait for your PR review and merge approval!
-* __Star this repository__ if you had fun!
+* __Star this repository__ for higher chance of merge approval!
 
 ### Create a `Hello, World!` Script
 Add a `hello_world_yourusername.xx` script to the `scripts` directory in any language of your choice! Here is an example:
@@ -66,4 +66,6 @@ Checkout this list for README examples - Awesome README [![Awesome](https://cdn.
 Github-Flavored Markdown [https://guides.github.com/features/mastering-markdown/](https://guides.github.com/features/mastering-markdown/)
 
 ## Content courtesy
-[https://github.com/AliceWonderland/hacktoberfest](https://github.com/AliceWonderland/hacktoberfest)
+[https://github.com/AliceWonderland/hacktoberfest](https://github.com/AliceWonderland/hacktoberfest) 
+
+
