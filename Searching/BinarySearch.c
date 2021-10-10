@@ -1,4 +1,5 @@
 #include <stdio.h>
+/*Binary search in C*/
 int search(int *arr, int n, int no)
 {
 	int beg=0;
