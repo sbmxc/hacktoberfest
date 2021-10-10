@@ -6,7 +6,9 @@ Celebrate [HacktoberFest](https://hacktoberfest.digitalocean.com/) by getting in
 
 This repository is open to all members of the GitHub Community. Any member may contribute to this project without being a collaborator.
 
-[https://github.com/sbmsc/hacktoberfest](https://github.com/sbmsc/hacktoberfest)
+[https://github.com/sbmxc/hacktoberfest](https://github.com/sbmsc/hacktoberfest)
+
+ Also, checkout other repositories of mine if you find you can improve something there. You are more than welcome to make PR there as well. Although, that would only be approved if you enhance the existing apps.
 
 
 ## What is Hacktoberfest and how many times it is organised in a year?
