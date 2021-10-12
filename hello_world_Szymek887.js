@@ -1,0 +1,1 @@
+console.log('Hello world! My name\'s Jacob and this is my first HacktoberFest21 commit :D')
