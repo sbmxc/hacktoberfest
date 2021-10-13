@@ -1,0 +1,11 @@
+# ignore executable/binaries files
+*.out
+*.exe
+*.o 
+*.so
+*.a
+
+# ignore config files
+.idea
+.replit
+.vs
