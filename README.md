@@ -59,7 +59,7 @@ Here is a great tutorial for creating your first Pull Request by [Roshan Jossey]
 
 Managing your Forked Repo [https://help.github.com/articles/fork-a-repo/](https://help.github.com/articles/fork-a-repo/)
 
-Syncing a Fork [https://help.github.com/articles/syncing-a-fork/](https://help.github.com/articles/syncing-a-fork/)
+Syncing a fork [https://help.github.com/articles/syncing-a-fork/](https://help.github.com/articles/syncing-a-fork/)
 
 Keep Your Fork Synced [https://gist.github.com/CristinaSolana/1885435](https://gist.github.com/CristinaSolana/1885435)
 
