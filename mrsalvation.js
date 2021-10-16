@@ -1,0 +1,1 @@
+console.log("Isn't it amazing that few well written lines can change your life be it a poem or a piece of code\n-moksha")
