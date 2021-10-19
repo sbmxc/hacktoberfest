@@ -1,0 +1,21 @@
+// find all prime numbers till given number
+
+#code
+from math import sqrt
+
+n = int(input("enter a num to which you want prime numbers\n"))
+primes = [True] * (n+1)
+primes[0] = False
+primes[1] = False
+
+#now we will loop til sqrt of num and all its divisible wil be mark as False
+for i in range(2, int(sqrt(n))+1):
+    if primes[i] == True:
+        #make its multiple as False
+        for j in range(i*i, n+1, i):
+            primes[j] = False
+            
+#print all nums where index is True
+for i in range(len(primes)):
+    if primes[i] == True:
+        print(i)
