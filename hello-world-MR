@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main(void)
+{
+	printf("Hello World, ");
+	printf("This is Hilmy.\n");
+	return 0;
+}
