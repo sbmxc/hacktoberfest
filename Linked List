@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<process.h>
+#include <stdlib.h>
  
 struct node
 {
@@ -9,6 +10,7 @@ struct node
  
 int main()
 {
+    int opt=1;
     int ch;
     void insert_beg();
     void insert_end();
@@ -18,7 +20,7 @@ int main()
     void delete_end();
     int delete_pos();
 
-    while(1)
+    while(opt==1)
     {
         printf("\n\n---- Singly Linked List(SLL) Menu ----");
         printf("\n1.Insert\n2.Display\n3.Delete\n4.Exit\n\n");
@@ -69,6 +71,9 @@ int main()
             case 4: exit(0);
                     default: printf("Wrong Choice!!");
         }
+        fflush(stdin);
+        printf("Would you like to continue?(0 or 1)\n");
+        scanf("%d",&opt);
     }
     return 0;
 }
