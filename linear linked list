@@ -1,0 +1,133 @@
+#include<stdio.h> 
+#include <stdlib.h>
+#include <conio.h>
+ 
+typedef struct linklist
+	 {
+	  int no;
+	  struct linklist *link;
+	 } node;
+char ch;
+/* following is the definition of the create() function  that creates nodes for linked list
+node *create(node *start)
+	{
+		node *temp,*p ;
+		ch='y';
+	//	clrscr();
+		printf("\n\t\t **** INPUT BLOCK ****\n");
+		if(start != NULL)
+		  {
+			printf("\n\n\t **** LIST ALREADY EXIST *****");
+			getch();
+			return(start);
+		   }
+		fflush(stdin);
+		while(ch=='y')
+		  {
+		   temp=(node *)malloc(sizeof(node));
+		   printf("\n\t Enter the no :==> " );
+		   scanf("%d",&temp->no);
+		   temp->link = NULL;
+		   if(start == NULL)
+			 p=start=temp ;
+		   else
+			{
+			p->link=temp;
+			p=temp;
+			}
+		   fflush(stdin);
+		   printf("\t Do you want to continue (y/n) ? : ");
+	 	   ch=getchar();
+		  } // end of loop
+		  return(start);
+	 }
+/* following is the definition of the function that displays all the nodes of the linked list */
+void print(node *start)
+	{
+	 node *temp;
+	// clrscr(); system("cls") ;
+	 printf("\n\nBase address    Number     Link");
+	 printf("\n===============================");
+for(temp=start;temp != NULL;temp=temp->link)
+printf("\n%10u  %10d  %10u",temp,temp->no,temp->link);
+printf("\n\n\t Press any key to goto MAIN BLOCK.....");
+	 getch();
+	 return;
+	}
+
+/* definition of the function delf() that will be invoked to delete the first node */
+node *delf(node *start)
+   {
+	node *tmp=start ;
+	start=start->link;
+	printf("\n\n\t Element is successfully deleted ");
+	getch();
+	free(tmp) ;  // garbage collection - deallocation of memory - reclaiming space
+	return(start);
+    }
+ /* following is the definition of the function del_negative_node()
+that finds a node with negative value and deletes it */
+  
+node *del_negative_node(node *start)
+    {
+	node *temp,*temp1;
+
+	for(temp=start;(!(temp->no < 0))&& (temp != NULL);temp=temp->link)
+	    temp1=temp;
+
+	if(temp==NULL)  // no node with -ve value found in the linked list
+	   {
+		 printf("\n\n\t No node with negative value found in the Linklist");
+		 getch();
+		 return(start);
+	   }
+
+	if(temp==start)  // first node is -ve
+	   start=delf(start);
+
+	else       
+	  {
+		temp1->link=temp1->link->link;   /* temp1->link=temp->link */
+		printf("\n\n\t Element with negative value is successfully deleted ");
+		getch();
+		free(temp) ; // garbage collection - deallocation of memory - reclaiming space
+		return(start);
+		   }
+	 return(start);
+	}
+
+ 				
+ /* following is the definition of the function main() */ 	
+ int main()
+  {
+node *start,*temp;  // declaration of pointer variables  
+int op;
+start=NULL;    // assigning NULL to start indicating linked list is empty
+while(1)     // infinite loop
+{
+system("cls") ;    // clears the screen
+printf("\n**************** Menu ***************");
+printf("\n1) Create the linked list");
+ printf("\n2) Delete a node with negative value") ;
+ printf("\n3) Display the linked list");
+printf("\n4) Exit");
+printf("\nEnter your option please ");
+scanf("%d",&op);   // reading choice from user
+switch(op)
+{
+case 1:
+ 			start=create(start) ;   // calling the create() function
+ 	        break ;
+ case 2:
+            	start=del_negative_node(start); // calling the function to delete a node with negative value
+				break;      		 
+
+ case 3:			  
+ 	        print(start) ;  // calling the print() function()
+			break ;
+case  4: 
+            exit(0) ;    // terminates the program			  
+ 	        
+	 }    // end of switch case
+}  // end of loop
+}  // end of main()
