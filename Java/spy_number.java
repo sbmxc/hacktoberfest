@@ -10,13 +10,13 @@ int product = 1;
 //executes until the condition returns true  
 while(number != 0)   
 {  
-//determines the last digit of the given number  
+
 lastDigit = number % 10;  
-//adds the last digit to the variable sum  
+
 sum = sum + lastDigit;  
-//multiply last digit with product  
+
 product = product * lastDigit;  
-//removes the last digit of the given number  
+
 number = number / 10;  
 }  
 //compares the variable sum with product and returns the result accordingly  
