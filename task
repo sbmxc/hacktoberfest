@@ -1,0 +1,15 @@
+#DCs
+inp = input('enter')
+inp1 = input('enter')
+prod = {
+    'watches':['rolex','s-ghock','submarine','richad-mille','toms'],
+    'quantity':[10,8,14,12,9],
+    'price':[5000,7500,4500,2300,6200]
+}
+df = pd.DataFrame(prod)
+filt = ('watches' == inp)
+if filt:
+  df[filt]
+  filt = df.quantity - inp1
+  df[filt]
+  df
