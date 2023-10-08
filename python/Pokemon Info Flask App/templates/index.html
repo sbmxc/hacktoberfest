@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pokémon Info</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .search-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Increase spacing between search box and button */
+        }
+        input[type="text"] {
+            padding: 10px;
+            width: 200px;
+            autocomplete: off;
+        }
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        .pokemon-info {
+            margin-top: 20px;
+        }
+        #hints {
+            position: relative;
+            text-align: left;
+        }
+        .hint-box {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            z-index: 1;
+            border: 1px solid #ccc;
+            width: 200px;
+        }
+        .hint-box div {
+            padding: 5px;
+            cursor: pointer;
+        }
+        img.pokemon-image {
+            width: 200px;
+        }
+        ul {
+            text-align: left;
+            padding-left: 0;
+        }
+        li {
+            list-style: none;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Information</h1>
+        <form method="POST">
+            <div class="search-container">
+                <div id="hints">
+                    <input type="text" name="pokemon_name" id="pokemon_name" placeholder="Enter Pokémon Name" autocomplete="off">
+                    <div class="hint-box" id="hint-box">
+                        {% for name in pokemon_names %}
+                            <div>{{ name }}</div>
+                        {% endfor %}
+                    </div>
+                </div>
+                <input type="submit" value="Search">
+            </div>
+        </form>
+        {% if pokemon_data %}
+        <div class="pokemon-info">
+            <h2>{{ pokemon_data['name'] }}</h2>
+            {% if 'sprites' in pokemon_data %}
+                <img src="{{ pokemon_data['sprites']['front_default'] }}" alt="{{ pokemon_data['name'] }} Image" class="pokemon-image">
+            {% else %}
+                <p>No image available.</p>
+            {% endif %}
+            <p>Type: {{ pokemon_data['types'][0]['type']['name'] }}</p>
+            <p>Height: {{ pokemon_data['height'] }}</p>
+            <p>Weight: {{ pokemon_data['weight'] }}</p>
+            <p>Abilities:</p>
+            <ul>
+                {% for ability in pokemon_data['abilities'] %}
+                    <li>{{ ability['ability']['name'] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% elif pokemon_data['name'] == "Not Found" %}
+            <h2>Pokémon not found.</h2>
+        {% endif %}
+    </div>
+
+    <script>
+        const pokemonNameInput = document.getElementById('pokemon_name');
+        const hintBox = document.getElementById('hint-box');
+
+        pokemonNameInput.addEventListener('input', () => {
+            const inputText = pokemonNameInput.value.toLowerCase();
+            const hintElements = hintBox.querySelectorAll('div');
+
+            hintElements.forEach((hintElement) => {
+                const pokemonName = hintElement.textContent.toLowerCase();
+                if (pokemonName.startsWith(inputText)) {
+                    hintElement.style.display = 'block';
+                } else {
+                    hintElement.style.display = 'none';
+                }
+            });
+
+            if (inputText === '') {
+                hintBox.style.display = 'none';
+            } else {
+                hintBox.style.display = 'block';
+            }
+        });
+
+        hintBox.addEventListener('click', (event) => {
+            if (event.target.tagName === 'DIV') {
+                pokemonNameInput.value = event.target.textContent;
+                hintBox.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
