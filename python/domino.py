@@ -13,6 +13,12 @@ def domino_fast(n):
 
 
 def domino(n):
+
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+
     DP = [None] * n
     DP[0], DP[1] = 1, 1
 
@@ -21,9 +27,19 @@ def domino(n):
 
     return DP[-1]
 
+def domino_sum(n):
+    sum1 = sum(domino(i) for i in range(1, n + 1))
+    sum2 = sum(domino_fast(i) for i in range(1, n + 1))
+    return sum1, sum2
 
 if __name__ == "__main__":
-    result1 = domino(40)
-    result2 = domino_fast(40)
-    
-    print(result1, result2)
+    n = int(input("Enter the value of n: "))
+    result1 = domino(n)
+    result2 = domino_fast(n)
+    sum_result1, sum_result2 = domino_sum(n)
+
+    print("Result for domino({}): {}".format(n, result1))
+    print("Result for domino_fast({}): {}".format(n, result2))
+    print("Sum of the first {} terms using domino: {}".format(n, sum_result1))
+    print("Sum of the first {} terms using domino_fast: {}".format(n, sum_result2))
+
