@@ -1,6 +1,6 @@
 #  HacktoberFest is here!!
 
-Use this repository to make your first and easy contribution to open source world. Create and easy pull request by following the steps given below.
+Use this repository to make your first and easy contribution to the open source world. Create an easy pull request by following the steps given below.
 
 Celebrate [HacktoberFest](https://hacktoberfest.digitalocean.com/) by getting involved in the Open Source Community by completing some simple tasks in this project.
 
@@ -11,14 +11,14 @@ This repository is open to all members of the GitHub Community. Any member may c
  Also, checkout other repositories of mine if you find you can improve something there. You are more than welcome to make PR there as well. Although, that would only be approved if you enhance the existing apps.
 
 
-## What is Hacktoberfest and how many times it is organised in a year?
+## What is Hacktoberfest and how many times it is organized in a year?
 A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first Pull Request to any Public Repository on GitHub and contribute to the Open Source Developer Community.
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
 
-## How Contribute to This Project
-Here is a simple way to contribut to the project.
+## How to Contribute to This Project
+Here is a simple way to contribute to the project.
 * Create a simple 'Hello, World' script in a language of your choice
 
 ## Getting Started
@@ -40,7 +40,7 @@ git push origin branch-name
 ```
 * Create a New Pull Request from your forked repository (Click the New Pull Request button located at the top of your repo)
 * Wait for your PR review and merge approval!
-* __Star this repository__ for higher chance of merge approval!
+* __Star this repository__ for a higher chance of merge approval!
 
 ### Create a `Hello, World!` Script
 Add a `hello_world_yourusername.xx` script to the `scripts` directory in any language of your choice! Here is an example:
