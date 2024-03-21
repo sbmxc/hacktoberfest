@@ -1,0 +1,12 @@
+Steps to setup a Change Data Capture ( CDC ) using Debezium and Confluent Sink Connector on Postgres Database
+
+1. Install Kafka on your system for Mac and Linux can use "homebrew" brew install Kafka
+2. Install postgres using homebrew.
+3. Start kafka and zookeeper using command
+         brew services start kafka
+         brew services start zookeeper
+4. Extract the zip attached and go to the folder.
+5. There will be 2 files kafka-source and kafka-sink which will caputre the respective changes.
+6. Create two tables with same schema in postgres.
+7. Replace table names in both files.
+8. Run the command on CLI " connect-standalone connect-standalone.properties connector1.properties connector2.properties " where connector1 and connector2 are source and sink connector respectively
