@@ -6,6 +6,7 @@
 4. Merge Sort.
 5. Quick Sort.
 6. Radix Sort.
+7. Counting Sort
 
 # Time-complexities of sorting algorithms
 1. Selection Sort -	Ω(n^2)  	θ(n^2)  	O(n^2)	 
@@ -16,3 +17,5 @@
 6. Merge Sort - 	Ω(n log(n))	θ(n log(n))	O(n log(n))	 
 7. Bucket Sort	- Ω(n+k)	     θ(n+k)  	O(n^2)	 
 8. Radix Sort	-  Ω(nk)      	θ(nk)	   O(nk)
+9. Counting Sort - Ω(max-min+n) θ(max-min+n) O(max-min+n)  OR
+                   Ω(n log(n)) θ(n log(n)) O(n log(n))
