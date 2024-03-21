@@ -1,4 +1,4 @@
-package Sorting_Algo;
+// package Sorting_Algo;
 
 /****************************   Bubble Sort 
 
@@ -48,7 +48,7 @@ public class BubbleSort {
         int[] arr = {34, 10, 43, 2, 6, 11, 8};
         int n = arr.length;
 
-        System.out.println("Sorted Array in Ascending Order:");
+        System.out.println("The Array in Ascending order:");
         System.out.println(Arrays.toString(bubbleSort(arr, n)));
     }
 }
