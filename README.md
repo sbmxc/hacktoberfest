@@ -1,10 +1,10 @@
 #  HacktoberFest is here!!
 
-Use this repository to make your first and easy contribution to open source world. Create and easy pull request by following the steps given below.
+Use this repository to make your first and easy contribution to open source world . Create and easy pull request by following the steps given below.
 
 Celebrate [HacktoberFest](https://hacktoberfest.digitalocean.com/) by getting involved in the Open Source Community by completing some simple tasks in this project.
 
-This repository is open to all members of the GitHub Community. Any member may contribute to this project without being a collaborator.
+This repository is open to all members of the GitHub Community . Any member may contribute to this project without being a collaborator.
 
 [https://github.com/sbmxc/hacktoberfest](https://github.com/sbmsc/hacktoberfest)
 
@@ -12,7 +12,7 @@ This repository is open to all members of the GitHub Community. Any member may c
 
 
 ## What is Hacktoberfest and how many times it is organised in a year?
-A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first Pull Request to any Public Repository on GitHub and contribute to the Open Source Developer Community.
+A month-long celebration from October 1st - 31st sponsored by [Digital Ocean](https://hacktoberfest.digitalocean.com/) and [GitHub](https://github.com/blog/2433-celebrate-open-source-this-october-with-hacktoberfest) to get people involved in [Open Source](https://github.com/open-source). Create your very first Pull Request to any Public Repository on GitHub and contribute to the Open Source Developer Community .
 
 [https://hacktoberfest.digitalocean.com/](https://hacktoberfest.digitalocean.com/)
 
@@ -22,7 +22,7 @@ Here is a simple way to contribut to the project.
 * Create a simple 'Hello, World' script in a language of your choice
 
 ## Getting Started
-* Fork this repository (Click the Fork button in the top right of this page, click your Profile Image)
+* Fork this repository (Click the Fork button in the top right of this page , click your Profile Image)
 * Clone your fork down to your local machine
 ```markdown
 git clone <url> (given in clone or download button)
